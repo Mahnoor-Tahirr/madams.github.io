@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSICTUNE</title>
+    <link rel="icon" href="images/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Edu+TAS+Beginner:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js"></script>
+    <script src="https://kit.fontawesome.com/97ad0fdf1b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="nav">
+
+        <div class="logo">
+            <img class="logo-pic" src="images/Logo.png" alt="" height="190%" width="70%">
+            <p class="musictune">USIC</p>
+            <p class="tune">TUNE</p>
+        </div>
+        <div class="wrapper">
+            <input type="text" class="input" placeholder="Search Here...">
+            <button type="button" class="trigger_search"><i class="fas fa-search icon"></i></button>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Artist</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <button class="btn1">Sign In</button>
+        <button class="btn2">Create Account</button>
+        <form id="form">
+            <h2>Sign In</h2>
+            <button class="btnclose"><b>X</b></button>
+            <input type="text" name="email" placeholder="Email...">
+            <input type="password" name="password" placeholder="Password...">
+            <input class="btn3" type="submit" value="Submit">
+        </form>
+        <form id="form2">
+            <h2>Registration Form</h2>
+            <button id="btnclose"><b>X</b></button>
+            <input type="text" name="name" placeholder="Name...">
+            <input type="text" name="email" placeholder="Email...">
+            <input type="password" name="password" placeholder="Password...">
+            <input type="password" name="password" placeholder="Confirm Password...">
+            <input type="number" name="age" placeholder="Age...">
+            <b>Gender:</b> <input type="radio" name="gender"> <b>Male</b>
+            <input type="radio" name="gender"> <b>Female</b>
+            <input id="btn3" type="submit" value="Create Account">
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="images/Screenshot 2023-11-04 020602.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:black; font-weight: bolder;"><u>Connect on MusicTune</u></h2>
+                    <p style="color:black; font-weight: bolder;">Discover, stream, and share a constantly expanding mix
+                        of music from emerging
+                        and major artists around the world.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/istockphoto-1330424071-1024x1024.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><b>Never Stop Listening</b></h2>
+                    <p>One good thing about music.<br>When it hits you, you feel no pain </p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/images.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><B>The Beatles Experience</B></h2>
+                    <p style="text-justify: center;">Our playlist The Beatles Experience features a diverse collection
+                        of songs in mp3 format, ready
+                        for you to download and enjoy without any charges or FREE of cost. With a mix of old favourites
+                        and new hits, there's something for everyone. Whether you're looking for the latest chartbuster
+                        songs or some classic tracks, our The Beatles Experience playlist has got you covered.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    <div class="animation">
+        <h2>MUSICTUNE</h2>
+        <h2>MUSICTUNE</h2>
+    </div>
+    <div class="border">
+        <div class="player">
+            <div class="playermusic">
+                <nav>
+                    <div class="circle">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <img src="images/rafta rafta.jpg" class="song-img">
+                <h1>Rafta Rafta</h1>
+                <p>ATIF ASLAM</p>
+                <audio id="song">
+                    <source
+                        src="media/Rafta Rafta - Official Music Video  Raj Ranjodh  Atif Aslam Ft. Sajal Ali  Tarish Music.mp3"
+                        type="audio/mpeg">
+                </audio>
+                <input type="range" value="0" id="progress">
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="ani"></div>
+        <div class="text">
+            <h1>Calling all creators</h1>
+            <p>Get on SoundCloud to connect with fans, share your sounds, and grow your audience. What are you waiting
+                for?</p>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slide-container">
+            <div class="slide-image">
+                <img src="images/slider/img1.jpg" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img2.jfif" alt="">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img3.jpg" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img4.jpg" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img5.jfif" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img6.jfif" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img7.jfif" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img8.jfif" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img9.jpg" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img10.webp" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img11.jpg" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img12.jpg" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img13.jpg" alt="" height="225px" width="225px">
+            </div>
+            <div class="slide-image">
+                <img src="images/slider/img14.jpg" alt="" height="225px" width="225px">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cards">
+            <img src="images/atif aslam.avif" class="card-img" alt="">
+            <div class="card-body">
+                <h1>ATIF ASLAM</h1><hr>
+                <p><u><b>Born</b></u> 12 March 1983 (age 40) Pakistan <hr><p>
+                    <u><b>Occupations</b></u> Singer <hr><p>
+                    <u><b>Years active</b></u> 2003-present</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="images/img3.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <h1>ALI ZAFAR</h1><hr>
+                <p><u><b>Born</b></u> 12 March 1983 (age 40) Pakistan <hr><p>
+                    <u><b>Occupations</b></u> Singer <hr><p>
+                    <u><b>Years active</b></u> 2003-present</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="images/Back-2-Love-Hindi-2014-20190924060930-500x500.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <h1>RAHAT FATEH ALI KHAN</h1><hr>
+                <p><u><b>Born</b></u> 12 March 1983 (age 40) Pakistan <hr><p>
+                    <u><b>Occupations</b></u> Singer <hr><p>
+                    <u><b>Years active</b></u> 2003-present</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="images/Momina.png" class="card-img" alt="">
+            <div class="card-body">
+                <h1 style="margin-top: 25px;"> MOMINA MUSTEHSAN</h1><hr>
+                <p><u><b>Born</b></u> 12 March 1983 (age 40) Pakistan <hr><p>
+                    <u><b>Occupations</b></u> Singer <hr><p>
+                    <u><b>Years active</b></u> 2003-present</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="images/aima baig.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <h1>AIMA BAIG</h1><hr>
+                <p><u><b>Born</b></u> 12 March 1983 (age 40) Pakistan <hr><p>
+                    <u><b>Occupations</b></u> Singer <hr><p>
+                    <u><b>Years active</b></u> 2003-present</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="images/img8.jfif" class="card-img" alt="">
+            <div class="card-body">
+                <h1 style="margin-top: 30px;">MUSTAFA ZAHID</h1><hr>
+                <p><u><b>Born</b></u> 12 March 1983 (age 40) Pakistan <hr><p>
+                    <u><b>Occupations</b></u> Singer <hr><p>
+                    <u><b>Years active</b></u> 2003-present</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script src="music-list.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
